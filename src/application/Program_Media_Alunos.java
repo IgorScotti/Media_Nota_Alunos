@@ -29,6 +29,7 @@ public class Program_Media_Alunos {
 		}else {
 			System.out.println("Você foi Reprovado!!");
 		}
+		System.out.println();
 		sc.close();
 
 	}
