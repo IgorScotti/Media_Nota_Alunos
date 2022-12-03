@@ -18,7 +18,17 @@ public class Program_Media_Alunos {
 			int nota = sc.nextInt();
 			vectNotas[i] = nota;
 		}
-
+		double somaNotas = 0;
+		for (int i = 0; i <vectNotas.length; i++ ) {
+			 somaNotas += vectNotas[i];
+		}
+		double mediaNotas = somaNotas/ vectNotas.length;
+		
+		if (mediaNotas > 7) {
+			System.out.println("Parabéns você foi aprovado!!");
+		}else {
+			System.out.println("Você foi Reprovado!!");
+		}
 		sc.close();
 
 	}
